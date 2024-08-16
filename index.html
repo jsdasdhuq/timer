@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머와 알람</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        #timerDisplay {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>타이머와 알람</h1>
+        <div id="timerDisplay">30:00</div>
+        <button onclick="startTimer()">타이머 시작</button>
+        <button class="controls" onclick="changeInterval()">알람 간격 변경</button>
+        <audio id="audio" src="path_to_your_audio_file.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
